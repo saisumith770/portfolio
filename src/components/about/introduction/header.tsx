@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
 interface Props {
-    widen: boolean
+  widen: boolean
 }
 
 export default styled.div<Props>`
   width: ${({ widen }) => widen ? "calc(100% - 20px)" : `calc(40% - 80px)`};
-  height: 100%;
-  /* background-color: grey; */
-  position: fixed;
-  top:0;
-  left:${({ widen }) => widen ? "10px" : "80px"};
-  overflow-y: scroll;
+  height: ${({ widen }) => widen ? "auto" : "100%"};
+  position: relative;
+  /* top:0; */
+  margin-left:${({ widen }) => widen ? "10px" : "30px"};
+  overflow-y: ${({ widen }) => widen ? "visible" : "scroll"};
+  /* background-color: green; */
   
   h1 {
       color: white;
