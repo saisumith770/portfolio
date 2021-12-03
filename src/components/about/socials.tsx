@@ -22,14 +22,14 @@ const SocialLink = styled.a`
 `
 
 interface SocialSectionProps {
-  display: boolean
+  show: boolean
 }
 
 const SocialSection = styled.div<SocialSectionProps>`
   background-color: #212127;
   width: 40px;
   height: 180px;
-  display: ${({ display }) => display ? "flex" : "none"};
+  display: ${({ show }) => show ? "flex" : "none"};
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -45,7 +45,7 @@ const SocialSection = styled.div<SocialSectionProps>`
 
 export default function ({ width }: { width: number }) {
   return (
-    <SocialSection display={width > 850}>
+    <SocialSection show={width > 850}>
       <SocialLink children={<AiFillYoutube />} href="https://www.youtube.com/channel/UCfbDVrWZ6pBDc1gf3_qQU6g" target="_blank" />
       <SocialLink children={<AiFillGithub />} href="https://github.com/saisumith770" target="_blank" />
       <SocialLink children={<FaDiscord />} href="https://www.discord.gg/invite/yu4RtV5dYa" target="_blank" />

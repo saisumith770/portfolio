@@ -24,7 +24,6 @@ function App() {
 /**
  * Developer Since
  * Languages
- * Frameworks
  * Github Contributions
  * Github Repositories
  */

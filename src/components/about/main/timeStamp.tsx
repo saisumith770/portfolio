@@ -3,6 +3,7 @@ import styled from "styled-components"
 export default styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   h1{
     color:silver;
@@ -13,13 +14,13 @@ export default styled.div`
     color:teal;
     font-family:"Segoe UI";
     font-size:30px;
-    margin-left:10px
+    margin-left:10px;
+    margin-right:10px;
   }
 
   div{
       background-color: #212127;
       border-radius:5px;
-      margin-left:10px;
 
       h1{
           color:lightseagreen;
