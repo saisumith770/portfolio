@@ -9,7 +9,7 @@ import styled from 'styled-components'
 import { languages } from './data'
 
 const Container = styled.div<{ widen: boolean }>`
-    width: ${({ widen }) => widen ? "calc(100% - 20px)" : "calc(60% - 50px)"};
+    width: ${({ widen }) => widen ? "calc(100% - 20px)" : "calc(60% - 70px)"};
     height:${({ widen }) => widen ? "auto" : "100%"};
     // backgroundColor: "grey",
     margin-left: ${({ widen }) => widen ? "10px" : "30px"};
