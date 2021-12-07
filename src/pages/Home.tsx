@@ -8,7 +8,55 @@ import mockupCard2 from '../images/mockup-card2.svg'
 
 import Home from '../components/home'
 import { Mockup, Waves } from '../components/home/images'
-import { AnimationDiv, TextAnimation } from '../components/home/text'
+import { AnimationDiv, TextAnimation, ExperienceSection } from '../components/home/text'
+import Socials from '../components/home/socials'
+
+import {
+    ProfileSection,
+} from '../components/about/introduction/profile'
+
+function LeftSideContent() {
+    return (
+        <ExperienceSection>
+            <div style={{ marginLeft: "20px", position: "relative", bottom: "40px" }}>
+                <ProfileSection>
+                    <img src="https://avatars.githubusercontent.com/u/67259068?v=4"
+                        alt="user-image"
+                        style={{
+                            width: "80px",
+                            height: "80px"
+                        }}
+                    />
+                    <div>
+                        <h4 style={{ fontSize: "30px", color: "white" }}>Sai Sumith</h4>
+                        <h5 style={{ fontSize: "20px", color: "silver" }}>saisumith812@gmail.com</h5>
+                    </div>
+                </ProfileSection>
+            </div>
+            <AnimationDiv>
+                <h1 style={{ margin: "0 15px 0 20px" }}>Self-taught</h1>
+                <TextAnimation>
+                    <Typewriter
+                        options={{
+                            strings: [
+                                "Javascript",
+                                "Typescript",
+                                "Python",
+                                "Web",
+                                "React",
+                                "React Native"
+                            ],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </TextAnimation>
+            </AnimationDiv>
+            <h1 style={{ marginLeft: "20px", position: "relative", bottom: "5px", marginBottom: "10px" }}>Developer</h1>
+            <Socials />
+        </ExperienceSection>
+    )
+}
 
 export default function () {
     return (
@@ -20,28 +68,7 @@ export default function () {
             <Mockup src={mockup3} alt="Mockup" bottom="50px" right="20px" />
             <Waves src={waves} alt="waves" />
 
-            <div>
-                <AnimationDiv>
-                    <h1 style={{ margin: "0 15px 0 20px" }}>Self-taught</h1>
-                    <TextAnimation>
-                        <Typewriter
-                            options={{
-                                strings: [
-                                    "Javascript",
-                                    "Typescript",
-                                    "Python",
-                                    "Web",
-                                    "React",
-                                    "React Native"
-                                ],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        />
-                    </TextAnimation>
-                </AnimationDiv>
-                <h1 style={{ marginLeft: "20px", position: "relative", bottom: "20px" }}>Developer</h1>
-            </div>
+            <LeftSideContent />
         </Home>
     )
 }

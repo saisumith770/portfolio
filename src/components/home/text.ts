@@ -12,3 +12,13 @@ export const AnimationDiv = styled.div`
         width:300px;
     }
 `
+
+export const ExperienceSection = styled.div`
+    width:550px; 
+    h1{
+        font-family: 'Segoe UI';
+        color:white;
+        font-size: 40px;
+        margin:0;
+    }
+`

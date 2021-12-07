@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import { Mockup, Waves } from './images'
+import { ExperienceSection } from './text'
 
 export default styled.div`
     background-color: #171825;
@@ -19,17 +20,9 @@ export default styled.div`
         bottom: 0;
     };
 
-    div{
+    ${ExperienceSection}{
         position: relative;
         top:50%;
         transform: translate(0,-50%);
-        width:550px;
-
-        h1{
-            font-family: 'Segoe UI';
-            color:white;
-            font-size: 40px;
-            margin:0;
-        }
     }
 `
