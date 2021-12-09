@@ -15,6 +15,8 @@ import {
     ProfileSection,
 } from '../components/about/introduction/profile'
 
+import { useWindowSize } from '../hooks/useWindowSize'
+
 function LeftSideContent() {
     return (
         <ExperienceSection>
@@ -59,14 +61,24 @@ function LeftSideContent() {
 }
 
 export default function () {
+    const { width } = useWindowSize()
     return (
         <Home>
-            <Mockup src={mockupCard2} alt="Mockup" top="30px" right="600px" />
-            <Mockup src={mockupCard2} alt="Mockup" top="30px" right="400px" />
-            <Mockup src={mockupContent} alt="Mockup" top="50px" right="50px" />
-            <Mockup src={mockup2} alt="Mockup" bottom="80px" right="300px" />
-            <Mockup src={mockup3} alt="Mockup" bottom="50px" right="20px" />
             <Waves src={waves} alt="waves" />
+            <div style={{
+                width: "100px",
+                height: "100px",
+                position: "relative",
+                top: "50%",
+                left: width < 1290 ? "774px" : "60%",
+                transform: "translate(0,-50%)",
+            }}>
+                <Mockup src={mockupCard2} alt="Mockup" top="-210px" left="-100px" />
+                <Mockup src={mockupCard2} alt="Mockup" top="-210px" left="-300px" />
+                <Mockup src={mockupContent} alt="Mockup" top="-180px" left="-280px" />
+                <Mockup src={mockup2} alt="Mockup" top="10px" left="-220px" />
+                <Mockup src={mockup3} alt="Mockup" top="50px" left="60px" />
+            </div>
 
             <LeftSideContent />
         </Home>

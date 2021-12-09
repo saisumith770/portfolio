@@ -15,6 +15,8 @@ export const AnimationDiv = styled.div`
 
 export const ExperienceSection = styled.div`
     width:550px; 
+    /* background-color: green; */
+
     h1{
         font-family: 'Segoe UI';
         color:white;

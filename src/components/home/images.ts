@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 interface MockupProps {
     top?: string,
-    right?: string,
     bottom?: string,
+    right?: string,
+    left?: string
 }
 
 export const Mockup = styled.img<MockupProps>` 
@@ -12,6 +13,7 @@ export const Mockup = styled.img<MockupProps>`
     top: ${({ top }) => top || ""};
     right: ${({ right }) => right || ""};
     bottom:${({ bottom }) => bottom || ""};
+    left:${({ left }) => left || ""};
     backdrop-filter: blur(10px);
     background: rgba(23, 12, 61, 0.3);
     border-radius: 10px;

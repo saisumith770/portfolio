@@ -10,18 +10,21 @@ export default styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    overflow: hidden;
 
     ${Mockup}{
         z-index: 1;
     };
 
     ${Waves}{
-        position: absolute;
+        position: fixed;
         bottom: 0;
+        min-width:680px;
+        width:100%;
     };
 
     ${ExperienceSection}{
-        position: relative;
+        position: absolute;
         top:50%;
         transform: translate(0,-50%);
     }
