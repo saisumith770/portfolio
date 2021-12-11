@@ -8,6 +8,7 @@ import {
 import { useWindowSize } from './hooks/useWindowSize';
 
 import Home from './pages/Home'
+import Work from './pages/Work'
 import About from './pages/About'
 import Resume from './pages/Resume'
 import Nav from './components/general/nav'
@@ -18,6 +19,7 @@ export default function () {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/work" element={<Work width={width} />} />
                 <Route path="/about" element={<About width={width} />} />
                 <Route path="/resume" element={<Resume width={width} />} />
             </Routes>
