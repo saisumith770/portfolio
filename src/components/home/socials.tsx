@@ -33,7 +33,7 @@ const SocialSection = styled.div`
     margin-left:20px;
 `
 
-export default function () {
+export default function Socials() {
   return (
     <SocialSection>
       <SocialLink children={<AiFillYoutube />} href="https://www.youtube.com/channel/UCfbDVrWZ6pBDc1gf3_qQU6g" target="_blank" />

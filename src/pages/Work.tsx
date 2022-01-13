@@ -22,7 +22,7 @@ function date_conversion(date: Date): string {
     else return `${Math.floor(time_dilation / (12 * 30 * 24 * 60 * 60))}`
 }
 
-export default function ({ width }: { width: number }) {
+export default function Work({ width }: { width: number }) {
     const [repos, setRepos] = useState<RepoType[]>([])
     useEffect(() => {
         fetch("https://api.github.com/users/saisumith770/repos")
@@ -38,7 +38,7 @@ export default function ({ width }: { width: number }) {
                 repos.map((repo, index) => (
                     <ProjectCard key={index} widen={width < 850}>
                         <Header>
-                            <a href={repo.html_url} target="_blank"><h4>{repo.name}</h4></a>
+                            <a href={repo.html_url} target="_blank" rel="noreferrer"><h4>{repo.name}</h4></a>
                             <div><h4>{repo.private ? "Private" : "Public"}</h4></div>
                         </Header>
                         <h5>{repo.description}</h5>

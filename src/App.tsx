@@ -13,7 +13,7 @@ import About from './pages/About'
 import Resume from './pages/Resume'
 import Nav from './components/general/nav'
 
-export default function () {
+export default function App() {
     const { width } = useWindowSize()
     return (
         <BrowserRouter>

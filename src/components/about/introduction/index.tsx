@@ -4,14 +4,12 @@ import {
     ProfileDescription
 } from './profile'
 
-export default function ({ width }: { width: number }) {
+export default function Introduction({ width }: { width: number }) {
     return (
         <Header widen={width < 850}>
             <h1>ABOUT</h1>
             <ProfileSection>
-                <img src="https://avatars.githubusercontent.com/u/67259068?v=4"
-                    alt="user-image"
-                />
+                <img src="https://avatars.githubusercontent.com/u/67259068?v=4"/>
                 <div>
                     <h4>Sai Sumith</h4>
                     <h5>saisumith812@gmail.com</h5>

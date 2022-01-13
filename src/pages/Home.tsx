@@ -23,7 +23,6 @@ function LeftSideContent() {
             <div style={{ marginLeft: "20px", position: "relative", bottom: "40px" }}>
                 <ProfileSection>
                     <img src="https://avatars.githubusercontent.com/u/67259068?v=4"
-                        alt="user-image"
                         style={{
                             width: "80px",
                             height: "80px"
@@ -60,7 +59,7 @@ function LeftSideContent() {
     )
 }
 
-export default function () {
+export default function Index() {
     const { width } = useWindowSize()
     return (
         <Home>

@@ -1,4 +1,4 @@
-export default function ({ width }: { width: number }) {
+export default function Resume({ width }: { width: number }) {
     return (
         <div style={{
             position: "absolute",
@@ -13,6 +13,7 @@ export default function ({ width }: { width: number }) {
                 width="100%"
                 height="100%"
                 allow="autoplay"
+                title="my-resume"
             >
 
             </iframe>

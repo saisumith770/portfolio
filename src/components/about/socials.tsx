@@ -43,7 +43,7 @@ const SocialSection = styled.div<SocialSectionProps>`
   z-index:1;
 `
 
-export default function ({ width }: { width: number }) {
+export default function Socials({ width }: { width: number }) {
   return (
     <SocialSection show={width > 850}>
       <SocialLink children={<AiFillYoutube />} href="https://www.youtube.com/channel/UCfbDVrWZ6pBDc1gf3_qQU6g" target="_blank" />

@@ -51,7 +51,7 @@ const Divider = styled.hr`
     margin:0;
 `
 
-export default function ({ widen }: { widen: boolean }) {
+export default function Main({ widen }: { widen: boolean }) {
     return (
         <Container widen={widen}>
             <TimeStamp>
