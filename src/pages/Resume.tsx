@@ -9,7 +9,7 @@ export default function Resume({ width }: { width: number }) {
             transform: "translate(-50%, 0)",
             overflow: "hidden"
         }}>
-            <iframe src="https://drive.google.com/file/d/11iNpAvxEl5-aoo9I5uLM3uWcZSnc3MZ-/preview"
+            <iframe src="https://drive.google.com/file/d/1e5nwfpxxO0D6k5udvcJlITo26d8gPzV3/preview"
                 width="100%"
                 height="100%"
                 allow="autoplay"
